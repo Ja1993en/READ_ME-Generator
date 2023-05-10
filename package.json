@@ -1,0 +1,24 @@
+{
+  "name": "read_me-generator",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ja1993en/READ_ME-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ja1993en/READ_ME-Generator/issues"
+  },
+  "homepage": "https://github.com/Ja1993en/READ_ME-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.2.1"
+  }
+}
