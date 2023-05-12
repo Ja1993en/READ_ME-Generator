@@ -1,8 +1,6 @@
 import inquirer from "inquirer";
 import {generateMarkdown} from "./utlis/MarkdownGenerator.js";
-// const maths = require('./utlis/MarkdownGenerator');
-// import generateMarkdown from "./utlis/GenerateMarkDown";
-// import fs from "fs"
+import fs from "fs"
 // import generate from ('./utlis/GenerateMarkDown')
 
 
@@ -37,7 +35,7 @@ function init() {
         type: 'list',
         message: 'What liscense did you use for this project',
         name: 'license',
-        choices: ['MIT', 'Apache 2.0 ', 'Mozilla Public']
+        choices: ['MIT', 'Apache 2.0', 'Mozilla Public']
       },
       {
         type: 'input',
@@ -61,14 +59,13 @@ function init() {
 
     ])
     .then((answers) => {
-      
-        console.log(generateMarkdown(answers))
-     
+    const fileData = generateMarkdown(answers)
+    
     })
     .catch((error) => {
       if (error.isTtyError) {
     //  `Prompt couldn't be rendered in the current environment`
-      //  console.log(errmessage)
+       console.log(errmessage)
       } else {
         // Something else went wrong
       }
