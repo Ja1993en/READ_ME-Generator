@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
 import {generateMarkdown} from "./utlis/MarkdownGenerator.js";
-import fs from "fs"
+import { promises as fs } from 'fs'
 // import generate from ('./utlis/GenerateMarkDown')
 
 
@@ -59,8 +59,14 @@ function init() {
 
     ])
     .then((answers) => {
-    const fileData = generateMarkdown(answers)
+    //   const fileName = "README-Generator.md"
     
+    const fileData = generateMarkdown(answers)
+    fs.writeFile("README.md", generateMarkdown(answers), (err) => {
+      if (err) {
+        return console.log(err);f
+      }
+    })
     })
     .catch((error) => {
       if (error.isTtyError) {
@@ -77,4 +83,5 @@ function init() {
 
 // Function call to initialize app
 init();
+
 

@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 if(license == 'MIT'){
-	return `MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+	return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
 } else if ( license == 'Apache 2.0'){
   return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0`
 } else if(license.license == 'Mozilla Public'){
@@ -38,8 +38,10 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
    let licenseLink = renderLicenseLink(data.license)
    let licenseBadge = renderLicenseBadge(data.license)
- `# ${data.title}
-  
+ return `# ${data.title}
+ <a href="https://img.shields.io/badge/License-${data.license}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license}-brightgreen"></a>
+ 
+
   ## Table of Contents
   * [Desription](#description)
   * [Install](#install)
