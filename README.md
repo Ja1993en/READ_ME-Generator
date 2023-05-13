@@ -1,7 +1,5 @@
-# asdf
- <a href="https://img.shields.io/badge/License-MIT-brightgreen"><img src="https://img.shields.io/badge/License-MIT-brightgreen"></a>
+# ReadMe Generator
  
-
   ## Table of Contents
   * [Desription](#description)
   * [Install](#install)
@@ -9,17 +7,17 @@
   * [resources](#resources)
   
   ## Description
-   * asf
+   * This project will ask you a series of questions and will generator a readme for you 
 
   ## Install
-  * sdf
+  * Npm install
 
   ## License
-  * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] (https://opensource.org/licenses/MIT)
+  * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Resources
-  * asdf
+  * StackoverFlow
 
   ## Contribute
-  * sdf
+  * jlnmcneal@gmail.com
   

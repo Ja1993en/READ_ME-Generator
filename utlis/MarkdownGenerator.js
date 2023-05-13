@@ -39,9 +39,7 @@ function generateMarkdown(data) {
    let licenseLink = renderLicenseLink(data.license)
    let licenseBadge = renderLicenseBadge(data.license)
  return `# ${data.title}
- <a href="https://img.shields.io/badge/License-${data.license}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license}-brightgreen"></a>
  
-
   ## Table of Contents
   * [Desription](#description)
   * [Install](#install)
